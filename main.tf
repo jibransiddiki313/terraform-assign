@@ -60,7 +60,6 @@ resource "aws_instance" "my_instance2" {
   }
 }
 
-# Create a load balancer
 resource "aws_elb" "my_elb" {
   name               = "my_load_balancer"
   security_groups    = [aws_security_group.my_sg.id]
